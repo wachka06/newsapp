@@ -18,16 +18,17 @@ const App = () => {
         setSortBy(input);
         break;
       case "UserInput":
-        setUserInput(input.toLowerCase());
+        let trimmedInput = input.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
+        setUserInput(trimmedInput.toLowerCase());
         break;
       default:
-        console.log("key not found");
+        console.log("User input not found");
     }
   };
 
   async function fetchData() {
     let endPoint = "http://newsapi.org/v2/everything";
-    let userInputVal = userInput ? `?q=${userInput}` : `?q=""`;
+    let userInputVal = `?q="${userInput}"`;
     let sortByVal = sortBy ? `&sortBy=${sortBy}` : `&sortBy=""`;
     const language = "&language=en";
     const apiKey = `&apiKey=${API_KEY}`;

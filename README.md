@@ -1,25 +1,31 @@
-# Dia & Co. Homework Note
+# Dia & Co. Homework
 
 ![Image of Mainpage](https://github.com/wachka06/dia-co-homework/blob/master/src/img/diaco_screen.jpg)
 
-### Description
+## Description
 
-This app allows the user to input a radius, a latitude, a longitude, and a budget for donations
-to a sportsleague. It returns the maximum number of results within the specified radius within
-the specified budget.
+This app allows a user to search [NewsAPI](https://newsapi.org/) for articles about a topic, which the user types in a searchbar. The user may then choose a sort option, sorting the news results by date, relevance or popularity. The results are displayed on the app in an appropriate format for the user's device.
 
-For calculating distance, a function from https://www.geodatasource.com/developers/javascript was borrowed. This URL contains additional documentation. However, it is important to note that east longitudes are positive (so west are negative), and south longitudes are negative (so north longitudes are positive).
+### What I improved...
 
-Included is a JSON file with 5 sample amounts based on the information provided with the challenge. Latitudes and longitudes have been added within the near geographic proximity of Seattle, WA as sample data. The JSON data contains 5 properties: id, name, latitude, longitude, budget.
+- Added a scroll back to top button in order to go back to the top smoothly on mobile.
+- Placed the Search Bar at the bottom of the page on mobile, since it's closer to the user's fingers.
+- Implemented app without using class components for the readability and the fast rendering.
 
-### Technologies
+### How I might improve the app if I were to complete it
+
+- Add Jest test
+- Add No Results Found page when the user cannot get any results
+
+## Technologies
 
 Project is created with:
 
 - React version: 16.13.1
 - Node.js version: v11.13.0
+- npm version: 6.13.7
 
-### Project setup
+## Project setup
 
 To run this project, install it locally and using npm:
 
