@@ -34,7 +34,7 @@ const App = () => {
     const apiKey = `&apiKey=${API_KEY}`;
     let url = endPoint + userInputVal + sortByVal + language + apiKey;
 
-    fetch(url)
+    await fetch(url)
       .then((res) => res.json())
       .then((data) => setData(data.articles));
   }
