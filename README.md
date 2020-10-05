@@ -1,4 +1,4 @@
-# Dia & Co. Homework
+# NewS'more
 
 ![Image of Mainpage](https://github.com/wachka06/dia-co-homework/blob/master/src/img/diaco_screen.jpg)
 
