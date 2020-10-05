@@ -30,7 +30,7 @@ Project is created with:
 To run this project, install it locally and using npm:
 
 ```
-$ cd diaandco
+$ cd newsmore
 $ npm install
 $ npm start
 ```
