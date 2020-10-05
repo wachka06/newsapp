@@ -1,0 +1,169 @@
+.SearchBar *, .Article button {
+  border-radius: 4px;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  min-height: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .SearchBar {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+  }
+  .ArticleContainer {
+    margin-bottom: 70px;
+  }
+  .Article p:first-of-type {
+    display: none;
+  }
+  .GoTop {
+    bottom: 85px;
+    right: 5px;
+  }
+}
+
+.App {
+  margin: 0 auto;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* SearchBar Component */
+.SearchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fill-available;
+  background-color: #42656e;
+  padding: 20px 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SearchBar * {
+  margin: 0 5px;
+  padding: 0 6px;
+}
+
+.SearchBar .UserInput {
+  background-color: #284b54;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.SearchBar select {
+  background-color: #284b54;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
+.SearchBar .SubmitButton {
+  background-color: #c89666;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
+.SearchBar .SubmitButton:hover {
+  background-color: #a07851;
+}
+
+/* ArticleContainer Component */
+.ArticleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.Article {
+  max-width: 350px;
+  padding: 20px 10px;
+}
+
+.Article .ImgWrapper {
+  position: relative;
+  max-width: 350px;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.Article .ImgWrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.Article h3 {
+  margin: 10px 0 0 0;
+}
+
+.Article p {
+  font-size: clamp(10px, 16px + 3vw, 16px);
+}
+
+.Article p:last-of-type {
+  color: dimgray;
+}
+
+.Article button {
+  background-color: #284b54;
+}
+
+.Article button a {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+}
+
+.Article button:hover {
+  background-color: #42656e;
+}
+
+/* GoTop Component */
+.GoTop {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background: #284b54;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.GoTop:hover {
+  opacity: 0.7;
+}
+
+.GoTop a {
+  fill: #fff;
+  line-height: 60px;
+  display: inline-block;
+  width: 100%;
+}
+
+.GoTop svg {
+  padding: 12px 0;
+}
+/*# sourceMappingURL=style.css.map */

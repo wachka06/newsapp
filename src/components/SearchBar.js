@@ -1,5 +1,13 @@
 import React from "react";
 
+export const text = {
+  default: "Sort Articles",
+  publishedAt: "Date",
+  relevancy: "Relevance",
+  popularity: "Popularity",
+  none: "None",
+};
+
 const SearchBar = ({ userInput, sortBy, handleChange, handleSubmit }) => {
   return (
     <form className="SearchBar" onSubmit={handleSubmit}>
@@ -10,11 +18,11 @@ const SearchBar = ({ userInput, sortBy, handleChange, handleSubmit }) => {
         onChange={handleChange}
       />
       <select className="UserSelect" value={sortBy} onChange={handleChange}>
-        <option value="">Sort Articles</option>
-        <option value="publishedAt">Date</option>
-        <option value="relevancy">Relevance</option>
-        <option value="popularity">Popularity</option>
-        <option value="">None</option>
+        <option value="">{text.default}</option>
+        <option value="publishedAt">{text.publishedAt}</option>
+        <option value="relevancy">{text.relevancy}</option>
+        <option value="popularity">{text.popularity}</option>
+        <option value="">{text.none}</option>
       </select>
       <input className="SubmitButton" type="submit" value="Submit" />
     </form>

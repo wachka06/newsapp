@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./css/App.scss";
+import "./css/style.scss";
 import SearchBar from "./components/SearchBar";
 import ArticleContainer from "./components/ArticleContainer";
 import GoTop from "./components/GoTop";
@@ -12,13 +12,13 @@ const App = () => {
   const [sortBy, setSortBy] = useState("");
 
   const handleChange = (e) => {
-    let input = e.target.value;
+    const input = e.target.value;
     switch (e.target.className) {
       case "UserSelect":
         setSortBy(input);
         break;
       case "UserInput":
-        let trimmedInput = input.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
+        const trimmedInput = input.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
         setUserInput(trimmedInput.toLowerCase());
         break;
       default:
@@ -27,12 +27,12 @@ const App = () => {
   };
 
   async function fetchData() {
-    let endPoint = "http://newsapi.org/v2/everything";
-    let userInputVal = `?q="${userInput}"`;
-    let sortByVal = sortBy ? `&sortBy=${sortBy}` : `&sortBy=""`;
+    const endPoint = "http://newsapi.org/v2/everything";
+    const userInputVal = `?q="${userInput}"`;
+    const sortByVal = sortBy ? `&sortBy=${sortBy}` : `&sortBy=""`;
     const language = "&language=en";
     const apiKey = `&apiKey=${API_KEY}`;
-    let url = endPoint + userInputVal + sortByVal + language + apiKey;
+    const url = endPoint + userInputVal + sortByVal + language + apiKey;
 
     await fetch(url)
       .then((res) => res.json())
@@ -50,9 +50,13 @@ const App = () => {
 
   return (
     <div className="App">
-      <SearchBar handleChange={handleChange} handleSubmit={handleSubmit} />
-      <ArticleContainer articles={data} />
-      <GoTop />
+      <header>
+        <SearchBar handleChange={handleChange} handleSubmit={handleSubmit} />
+      </header>
+      <main>
+        <ArticleContainer articles={data} />
+        <GoTop />
+      </main>
     </div>
   );
 };
