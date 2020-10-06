@@ -148,6 +148,7 @@
   height: 50px;
   text-align: center;
   background: #284b54;
+  border: none;
   border-radius: 50%;
   opacity: 0.5;
 }

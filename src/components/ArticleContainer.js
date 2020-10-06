@@ -5,16 +5,7 @@ const ArticleContainer = ({ articles }) => {
   return (
     <div className="ArticleContainer">
       {articles.length > 0 &&
-        articles.map((article) => (
-          <Article
-            key={article.publishedAt}
-            urlToImage={article.urlToImage}
-            title={article.title}
-            publishedAt={article.publishedAt}
-            description={article.description}
-            url={article.url}
-          />
-        ))}
+        articles.map((article, i) => <Article key={i} article={article} />)}
     </div>
   );
 };

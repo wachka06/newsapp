@@ -25,9 +25,9 @@ const App = () => {
         console.log("User input not found");
     }
   };
+  const endPoint = "http://newsapi.org/v2/everything";
 
   async function fetchData() {
-    const endPoint = "http://newsapi.org/v2/everything";
     const userInputVal = `?q="${userInput}"`;
     const sortByVal = sortBy ? `&sortBy=${sortBy}` : `&sortBy=""`;
     const language = "&language=en";
@@ -36,7 +36,8 @@ const App = () => {
 
     await fetch(url)
       .then((res) => res.json())
-      .then((data) => setData(data.articles));
+      .then((data) => setData(data.articles))
+      .catch((error) => console.log("Request failed", error));
   }
 
   useEffect(() => {
@@ -54,6 +55,7 @@ const App = () => {
         <SearchBar handleChange={handleChange} handleSubmit={handleSubmit} />
       </header>
       <main>
+        {/* <ReadLaters /> */}
         <ArticleContainer articles={data} />
         <GoTop />
       </main>

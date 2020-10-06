@@ -6,7 +6,8 @@ const formatDate = (dateStr) => {
   return new Date(dateStr).toLocaleDateString(undefined, options);
 };
 
-const Article = ({ urlToImage, title, publishedAt, description, url }) => {
+const Article = ({ article }) => {
+  const { urlToImage, title, publishedAt, description, url } = article;
   return (
     <div className="Article">
       <div className="ImgWrapper">
@@ -19,7 +20,7 @@ const Article = ({ urlToImage, title, publishedAt, description, url }) => {
       <h3>{title}</h3>
       <p>{description}</p>
       <p>{formatDate(publishedAt)}</p>
-      <button className="Selector" value="Read More">
+      <button className="Selector" aria-label="Read_more" value="Read More">
         <a href={url} target="_blank" rel="noopener noreferrer">
           Read More
         </a>
