@@ -1,3 +1,466 @@
 {
-  "articles": []
+  "articles": [
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 1
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Billy Steele",
+      "title": "Apple One bundle offers Arcade, Music, TV+ and iCloud for $15 a month",
+      "description": "At its September event today, Apple officially announced its “Apple One” subscription bundle: a combination of Apple Arcade, Apple Music, Apple TV+ and iCloud (50GB) for $14.95 a month.  It’s $19.95 per month, but it includes 200GB of iCloud storage.  If you …",
+      "url": "https://www.engadget.com/apple-one-subscription-bundle-apple-music-apple-tv-plus-announced-174601467.html",
+      "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-09%2F2d7d5cd0-f77b-11ea-bf7f-928bddb77371&client=amp-blogside-v2&signature=feefb5313b6f68d35747ff44402369fdf1e535c2",
+      "publishedAt": "2020-09-15T17:46:01Z",
+      "content": "The rumors were true. At its September event today, Apple officially announced its “Apple One” subscription bundle: a combination of Apple Arcade, Apple Music, Apple TV+ and iCloud (50GB) for $14.95 … [+837 chars]",
+      "id": 2
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 3
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 4
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 5
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 6
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 7
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 8
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 9
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Business Wire"
+      },
+      "author": null,
+      "title": "Apple Hospitality REIT Announces Dates for Third Quarter 2020 Earnings Release and Conference Call",
+      "description": "RICHMOND, Va.--(BUSINESS WIRE)--Apple Hospitality REIT Announces Dates for Third Quarter 2020 Earnings Release and Conference Call",
+      "url": "https://www.businesswire.com/news/home/20200928005678/en/Apple-Hospitality-REIT-Announces-Dates-for-Third-Quarter-2020-Earnings-Release-and-Conference-Call",
+      "urlToImage": "https://mms.businesswire.com/media/20200928005678/en/466699/21/AHREIT_rgb_for_Business_Wire.jpg",
+      "publishedAt": "2020-09-28T20:25:50Z",
+      "content": "RICHMOND, Va.--(BUSINESS WIRE)--Apple Hospitality REIT, Inc. (NYSE: APLE) (the Company) today announced that it plans to report third quarter 2020 financial results after the market closes on Thursda… [+1677 chars]",
+      "id": 10
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 11
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 12
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Billy Steele",
+      "title": "Apple One bundle offers Arcade, Music, TV+ and iCloud for $15 a month",
+      "description": "At its September event today, Apple officially announced its “Apple One” subscription bundle: a combination of Apple Arcade, Apple Music, Apple TV+ and iCloud (50GB) for $14.95 a month.  It’s $19.95 per month, but it includes 200GB of iCloud storage.  If you …",
+      "url": "https://www.engadget.com/apple-one-subscription-bundle-apple-music-apple-tv-plus-announced-174601467.html",
+      "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-09%2F2d7d5cd0-f77b-11ea-bf7f-928bddb77371&client=amp-blogside-v2&signature=feefb5313b6f68d35747ff44402369fdf1e535c2",
+      "publishedAt": "2020-09-15T17:46:01Z",
+      "content": "The rumors were true. At its September event today, Apple officially announced its “Apple One” subscription bundle: a combination of Apple Arcade, Apple Music, Apple TV+ and iCloud (50GB) for $14.95 … [+837 chars]",
+      "id": 13
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 14
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 15
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 16
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 17
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 18
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 19
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 20
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 21
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 22
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 23
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Jessica Conditt",
+      "title": "Apple will let Epic Games users 'sign in with Apple' for a bit longer",
+      "description": "A day before Apple was set to shut down the “sign in with Apple” prompt for Epic Games users, the company has retreated on its threat. Apple issued an indefinite extension on the matter, meaning for now, Epic Games players can still use “sign in with Apple,” …",
+      "url": "https://www.engadget.com/epic-games-sign-in-apple-reinstated-223215481.html",
+      "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-09%2Fdbdedc60-f3b4-11ea-b5d7-962cdf8d4fff&client=amp-blogside-v2&signature=98fa7823712a3658e4e14915606d9b9bf3d17da5",
+      "publishedAt": "2020-09-10T22:32:15Z",
+      "content": "A day before Apple was set to shut down the “sign in with Apple” prompt for Epic Games users, the company has retreated on its threat. Apple issued an indefinite extension on the matter, meaning for … [+486 chars]",
+      "id": 24
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 25
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Romain Dillet",
+      "title": "Apple introduces the Apple Watch SE, a cheaper Apple Watch",
+      "description": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the newly announced Apple Watch Series 6. But it costs $279. “The …",
+      "url": "http://techcrunch.com/2020/09/15/apple-introduces-the-apple-watch-se-a-cheaper-apple-watch/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/Apple-Watch-SE_Retina-display.jpg?w=711",
+      "publishedAt": "2020-09-15T17:39:14Z",
+      "content": "In addition to keeping old generation devices at an entry-level price, Apple is introducing a brand new Apple Watch at a cheaper price point. The new Apple Watch SE features the same design as the ne… [+1634 chars]",
+      "id": 26
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "Billy Steele",
+      "title": "Apple One bundle offers Arcade, Music, TV+ and iCloud for $15 a month",
+      "description": "At its September event today, Apple officially announced its “Apple One” subscription bundle: a combination of Apple Arcade, Apple Music, Apple TV+ and iCloud (50GB) for $14.95 a month.  It’s $19.95 per month, but it includes 200GB of iCloud storage.  If you …",
+      "url": "https://www.engadget.com/apple-one-subscription-bundle-apple-music-apple-tv-plus-announced-174601467.html",
+      "urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2020-09%2F2d7d5cd0-f77b-11ea-bf7f-928bddb77371&client=amp-blogside-v2&signature=feefb5313b6f68d35747ff44402369fdf1e535c2",
+      "publishedAt": "2020-09-15T17:46:01Z",
+      "content": "The rumors were true. At its September event today, Apple officially announced its “Apple One” subscription bundle: a combination of Apple Arcade, Apple Music, Apple TV+ and iCloud (50GB) for $14.95 … [+837 chars]",
+      "id": 27
+    },
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Boone Ashworth, Michael Calore",
+      "title": "Everything Apple Announced: Apple Watch 6, Apple Watch SE, iPad Air, Fitness+",
+      "description": "There are two new wearables, two new iPads, and a whole bunch of bundled subscription services.",
+      "url": "https://www.wired.com/story/everything-apple-announced-september-2020/",
+      "urlToImage": "https://media.wired.com/photos/5f610a5e8595a16063bbc4a4/191:100/w_1280,c_limit/Gear-iPad-Air_Sky-Blue.jpg",
+      "publishedAt": "2020-09-15T18:48:57Z",
+      "content": "Apple also announced a subscription service for streamed workouts that seems aimed squarely at taking on Peloton and other companies capitalizing on the home fitness trend.\r\nThe new Fitness+ service … [+3394 chars]",
+      "id": 28
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "Brendan Hesse",
+      "title": "How to Blur Your Background in Google Meet",
+      "description": "Google is rolling out new features for its current video chat apps, Googles Meet and Duo. Meet’s updates include a new background blurring tool; it also now allows users to view up to 49 camera feeds while using the “tile view” in large group meetings.Read mo…",
+      "url": "https://lifehacker.com/how-to-blur-your-background-in-google-meet-1845081778",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/jvstb7kgoy9gj0jngo9k.jpg",
+      "publishedAt": "2020-09-17T14:30:00Z",
+      "content": "Google is rolling out new features for its current video chat apps, Googles Meet and Duo. Meets updates include a new background blurring tool; it also now allows users to view up to 49 camera feeds … [+2003 chars]",
+      "id": 29
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "David Murphy",
+      "title": "How to Track COVID-19 Trends on Google Maps",
+      "description": "I was really hoping Google’s newest integration for Google Maps would allow you to see COVID-19 cases popping up and spreading out on a giant map in the style of Plague, Inc. Alas, it’s not meant to be—but you can at least now see COVID-19 trends directly on …",
+      "url": "https://lifehacker.com/how-to-track-covid-19-trends-on-google-maps-1845172437",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/s9tohmk0wognoei7lczz.png",
+      "publishedAt": "2020-09-25T16:00:00Z",
+      "content": "I was really hoping Googles newest integration for Google Maps would allow you to see COVID-19 cases popping up and spreading out on a giant map in the style of Plague, Inc. Alas, its not meant to be… [+1974 chars]",
+      "id": 30
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "David Murphy",
+      "title": "How to Blur Your House in Google Maps' Street View",
+      "description": "While, sure, anybody could just drive by your house to see what it looks like—all the tin foil in the world isn’t going to shield you from that privacy “violation,” though a fence might help—you can make it harder for people to see your home on Google Maps. R…",
+      "url": "https://lifehacker.com/how-to-blur-your-house-in-googles-street-view-1845050158",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/epvwr34qmp3oc1vl1t3j.jpg",
+      "publishedAt": "2020-09-14T18:05:00Z",
+      "content": "While, sure, anybody could just drive by your house to see what it looks likeall the tin foil in the world isnt going to shield you from that privacy violation, though a fence might helpyou can make … [+2313 chars]",
+      "id": 31
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "David Murphy",
+      "title": "What to Expect From Today's Google 'Launch Night' Stream",
+      "description": "Fall hardware announcement season continues. Google is on tap today; its fancy “Launch Night” event kicks off in just a few hours. As for what the company is planning to announce, that shouldn’t come as much of a surprise, since much of it has already leaked …",
+      "url": "https://lifehacker.com/what-to-expect-from-todays-google-launch-night-stream-1845227039",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/jfbh3jk3go5euwyqh7qu.png",
+      "publishedAt": "2020-09-30T15:30:00Z",
+      "content": "Fall hardwareannouncement season continues. Google is on tap today; its fancy Launch Night event kicks off in just a few hours. As for what the company is planning to announce, that shouldnt come as … [+1739 chars]",
+      "id": 32
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "David Murphy",
+      "title": "How to Stream Google Stadia on iOS/iPadOS",
+      "description": "In a perfect world, we could download apps from a centralized, secure app store on our phones, and these apps would allow us to connect to other services we enjoy without any extra hassle. In the real world, you’re going to have to employ some clever workarou…",
+      "url": "https://lifehacker.com/how-to-stream-google-stadia-on-ios-ipados-1845223254",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/kohl90mzf1cxoxzuk5sx.jpg",
+      "publishedAt": "2020-09-30T14:00:00Z",
+      "content": "In a perfect world, we could download apps from a centralized, secure app store on our phones, and these apps would allow us to connect to other services we enjoy without any extra hassle. In the rea… [+2962 chars]",
+      "id": 33
+    }
+  ]
 }

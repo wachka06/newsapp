@@ -37,6 +37,34 @@
   }
 }
 
+/* ReadLaterContainer Component */
+
+.ReadLaterContainer {
+  border: solid 1px $main-color;
+  display: flex;
+  margin: 10px 30px;
+  .ReadLater {
+    width: 15%;
+    padding: 0px 8px 6px;
+    button {
+      background-color: transparent;
+      border: none;
+      color: $sub-text-color;
+      padding: 0;
+    }
+    article {
+      font-size: 14px;
+      &:hover {
+        opacity: 0.8;
+      }
+      a {
+        text-decoration: none;
+        color: $sub-text-color;
+      }
+    }
+  }
+}
+
 /* ArticleContainer Component */
 
 .ArticleContainer {
@@ -70,7 +98,7 @@
     font-size: unquote("clamp(10px, 16px + 3vw, 16px)");
   }
   p:last-of-type {
-    color: dimgray;
+    color: $sub-text-color;
   }
   button {
     @extend %base-button;
@@ -82,6 +110,15 @@
     }
     &:hover {
       background-color: $main-color;
+    }
+  }
+  button:last-of-type {
+    background-color: white;
+    border: solid 1px $sub-color;
+    color: $sub-color;
+    margin: 0 10px;
+    &:hover {
+      opacity: 0.8;
     }
   }
 }

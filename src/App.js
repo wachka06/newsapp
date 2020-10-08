@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./css/style.scss";
-import SearchBar, { text } from "./components/SearchBar";
+import SearchBar from "./components/SearchBar";
 import ArticleContainer from "./components/ArticleContainer";
 import GoTop from "./components/GoTop";
+import ReadLaterContainer from "./components/ReadLaterContainer";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -10,6 +11,7 @@ const App = () => {
   const [data, setData] = useState({ articles: [] });
   const [userInput, setUserInput] = useState("");
   const [sortBy, setSortBy] = useState("");
+  const [ReadLaters, setReadLaters] = useState([]);
 
   const handleChange = (e) => {
     const input = e.target.value;
@@ -25,6 +27,7 @@ const App = () => {
         console.log("User input not found");
     }
   };
+
   const endPoint = "http://newsapi.org/v2/everything";
 
   async function fetchData() {
@@ -49,14 +52,60 @@ const App = () => {
     fetchData();
   };
 
+  const getArticles = (article) => {
+    article &&
+      fetch("http://localhost:3000/articles", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(article),
+      })
+        .then((res) => res.json())
+        .then((newArticle) => setReadLaters([...ReadLaters, newArticle]));
+  };
+
+  useEffect(() => {
+    getArticles();
+  }, []);
+
+  const removeArticles = (article) => {
+    article &&
+      fetch(`http://localhost:3000/articles/${article.id}`, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then(() => {
+          let newReadLaters = [...ReadLaters].filter(
+            (art) => art.id !== article.id
+          );
+          setReadLaters(newReadLaters);
+        });
+  };
+
+  useEffect(() => {
+    removeArticles();
+  }, []);
+
+  console.log(ReadLaters, "read");
+
   return (
     <div className="App">
       <header>
         <SearchBar handleChange={handleChange} handleSubmit={handleSubmit} />
       </header>
       <main>
-        {/* <ReadLaters /> */}
-        <ArticleContainer articles={data.articles} />
+        {ReadLaters.length > 0 && (
+          <ReadLaterContainer
+            articles={ReadLaters}
+            handleRemove={removeArticles}
+          />
+        )}
+        <ArticleContainer
+          articles={data.articles}
+          handleArticles={getArticles}
+        />
         <GoTop />
       </main>
     </div>
