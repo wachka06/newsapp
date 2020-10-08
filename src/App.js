@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./css/style.scss";
-import SearchBar from "./components/SearchBar";
+import SearchBar, { text } from "./components/SearchBar";
 import ArticleContainer from "./components/ArticleContainer";
 import GoTop from "./components/GoTop";
 
@@ -36,7 +36,7 @@ const App = () => {
 
     await fetch(url)
       .then((res) => res.json())
-      .then((data) => setData(data.articles))
+      .then((data) => setData({ articles: data.articles }))
       .catch((error) => console.log("Request failed", error));
   }
 
@@ -56,7 +56,7 @@ const App = () => {
       </header>
       <main>
         {/* <ReadLaters /> */}
-        <ArticleContainer articles={data} />
+        <ArticleContainer articles={data.articles} />
         <GoTop />
       </main>
     </div>
