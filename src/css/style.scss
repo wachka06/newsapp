@@ -20,7 +20,7 @@
     margin: 0 5px;
     padding: 0 6px;
   }
-  .UserInput {
+  input:first-child {
     background-color: $sub-color;
     flex: 1;
   }
@@ -28,7 +28,7 @@
     background-color: $sub-color;
     flex: 0.2;
   }
-  .SubmitButton {
+  input:last-child {
     background-color: $submit-button-color;
     flex: 0.2;
     &:hover {

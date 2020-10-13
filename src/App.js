@@ -9,30 +9,19 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 const App = () => {
   const [data, setData] = useState({ articles: [] });
-  const [userInput, setUserInput] = useState("");
-  const [sortBy, setSortBy] = useState("");
+  const [filter, setFilter] = useState({ userInput: "", sortBy: "" });
   const [ReadLaters, setReadLaters] = useState([]);
 
   const handleChange = (e) => {
-    const input = e.target.value;
-    switch (e.target.className) {
-      case "UserSelect":
-        setSortBy(input);
-        break;
-      case "UserInput":
-        const trimmedInput = input.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
-        setUserInput(trimmedInput.toLowerCase());
-        break;
-      default:
-        console.log("User input not found");
-    }
+    const { name, value } = e.target;
+    setFilter({ [name]: value });
   };
 
   const endPoint = "http://newsapi.org/v2/everything";
 
   async function fetchData() {
-    const userInputVal = `?q="${userInput}"`;
-    const sortByVal = sortBy ? `&sortBy=${sortBy}` : `&sortBy=""`;
+    const userInputVal = `?q="${filter.userInput}"`;
+    const sortByVal = filter.sortBy ? `&sortBy=${filter.sortBy}` : `&sortBy=""`;
     const language = "&language=en";
     const apiKey = `&apiKey=${API_KEY}`;
     const url = endPoint + userInputVal + sortByVal + language + apiKey;
