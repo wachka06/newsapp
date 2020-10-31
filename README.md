@@ -1,6 +1,7 @@
 # NewS'more
 
-![Image of Mainpage](https://github.com/wachka06/dia-co-homework/blob/master/src/img/diaco_screen.jpg)
+![Image of Mainpage](https://github.com/wachka06/dia-co-homework/blob/master/src/img/newsapp1.jpg)
+![Image of Mainpage](https://github.com/wachka06/dia-co-homework/blob/master/src/img/newsapp2.jpg)
 
 ## Description
 
@@ -30,7 +31,7 @@ Project is created with:
 To run this project, install it locally and using npm:
 
 ```
-$ cd newsmore
+$ cd newsapp
 $ npm install
 $ npm start
 ```
