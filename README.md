@@ -1,7 +1,7 @@
 # NewS'more
 
-![Image of Mainpage](https://github.com/wachka06/dia-co-homework/blob/master/src/img/newsapp1.jpg)
-![Image of Mainpage](https://github.com/wachka06/dia-co-homework/blob/master/src/img/newsapp2.jpg)
+![Image of Mainpage](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp1.jpg)
+![Image of Mainpage-mobile](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp2.jpg)
 
 ## Description
 
