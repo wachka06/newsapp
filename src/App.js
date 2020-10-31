@@ -8,8 +8,11 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 const App = () => {
   const [data, setData] = useState({ articles: [] });
-  const [filter, setFilter] = useState({ userInput: "", sortBy: "" });
-  const [ReadLaters, setReadLaters] = useState([]);
+  const [filter, setFilter] = useState({
+    userInput: "",
+    userLang: "",
+    sortBy: "",
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,7 +24,7 @@ const App = () => {
   async function fetchData() {
     const userInputVal = `?q="${filter.userInput}"`;
     const sortByVal = filter.sortBy ? `&sortBy=${filter.sortBy}` : `&sortBy=""`;
-    const language = "&language=en";
+    const language = filter.userLang ? `&language=${filter.userLang}` : "";
     const apiKey = `&apiKey=${API_KEY}`;
     const url = endPoint + userInputVal + sortByVal + language + apiKey;
 
@@ -39,44 +42,7 @@ const App = () => {
     e.preventDefault();
     fetchData();
   };
-
-  const getArticles = (article) => {
-    article &&
-      fetch("http://localhost:3000/articles", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(article),
-      })
-        .then((res) => res.json())
-        .then((newArticle) => setReadLaters([...ReadLaters, newArticle]));
-  };
-
-  useEffect(() => {
-    getArticles();
-  }, []);
-
-  const removeArticles = (article) => {
-    article &&
-      fetch(`http://localhost:3000/articles/${article.id}`, {
-        method: "DELETE",
-      })
-        .then((res) => res.json())
-        .then(() => {
-          let newReadLaters = [...ReadLaters].filter(
-            (art) => art.id !== article.id
-          );
-          setReadLaters(newReadLaters);
-        });
-  };
-
-  useEffect(() => {
-    removeArticles();
-  }, []);
-
-  console.log(ReadLaters, "read");
+  console.log("ln", filter.userLang);
 
   return (
     <div className="App">
@@ -84,10 +50,7 @@ const App = () => {
         <SearchBar handleChange={handleChange} handleSubmit={handleSubmit} />
       </header>
       <main>
-        <ArticleContainer
-          articles={data.articles}
-          handleArticles={getArticles}
-        />
+        <ArticleContainer articles={data.articles} />
         <GoTop />
       </main>
     </div>

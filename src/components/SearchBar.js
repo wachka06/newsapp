@@ -1,6 +1,10 @@
 import React from "react";
 
 export const text = {
+  defaultLn: "Languange",
+  en: "EN",
+  jp: "JP",
+  zh: "ZH",
   default: "Sort Articles",
   publishedAt: "Date",
   relevancy: "Relevance",
@@ -8,7 +12,13 @@ export const text = {
   none: "None",
 };
 
-const SearchBar = ({ userInput, sortBy, handleChange, handleSubmit }) => {
+const SearchBar = ({
+  userInput,
+  userLang,
+  sortBy,
+  handleChange,
+  handleSubmit,
+}) => {
   return (
     <form className="SearchBar" onSubmit={handleSubmit}>
       <input
@@ -17,6 +27,12 @@ const SearchBar = ({ userInput, sortBy, handleChange, handleSubmit }) => {
         placeholder="Some search term"
         onChange={handleChange}
       />
+      <select name="userLang" value={userLang} onChange={handleChange}>
+        <option value="">{text.defaultLn}</option>
+        <option value="en">{text.en}</option>
+        <option value="jp">{text.jp}</option>
+        <option value="zh">{text.zh}</option>
+      </select>
       <select name="sortBy" value={sortBy} onChange={handleChange}>
         <option value="">{text.default}</option>
         <option value="publishedAt">{text.publishedAt}</option>
