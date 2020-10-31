@@ -1,7 +1,7 @@
 import React from "react";
 
 export const text = {
-  defaultLn: "Languange",
+  defaultLn: "Language",
   en: "EN",
   jp: "JP",
   zh: "ZH",

@@ -42,7 +42,6 @@ const App = () => {
     e.preventDefault();
     fetchData();
   };
-  console.log("ln", filter.userLang);
 
   return (
     <div className="App">
