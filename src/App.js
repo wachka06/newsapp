@@ -3,7 +3,6 @@ import "./css/style.scss";
 import SearchBar from "./components/SearchBar";
 import ArticleContainer from "./components/ArticleContainer";
 import GoTop from "./components/GoTop";
-import ReadLaterContainer from "./components/ReadLaterContainer";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -85,12 +84,6 @@ const App = () => {
         <SearchBar handleChange={handleChange} handleSubmit={handleSubmit} />
       </header>
       <main>
-        {ReadLaters.length > 0 && (
-          <ReadLaterContainer
-            articles={ReadLaters}
-            handleRemove={removeArticles}
-          />
-        )}
         <ArticleContainer
           articles={data.articles}
           handleArticles={getArticles}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import noImg from "../img/noimg.jpg";
 
 const formatDate = (dateStr) => {
@@ -6,9 +6,8 @@ const formatDate = (dateStr) => {
   return new Date(dateStr).toLocaleDateString(undefined, options);
 };
 
-const Article = ({ article, handleArticles }) => {
+const Article = ({ article }) => {
   const { urlToImage, title, publishedAt, description, url } = article;
-  const [hideButton, setHideButton] = useState(false);
   return (
     <div className="Article">
       <div className="ImgWrapper">
@@ -25,14 +24,6 @@ const Article = ({ article, handleArticles }) => {
         <a href={url} target="_blank" rel="noopener noreferrer">
           Read More
         </a>
-      </button>
-      <button
-        onClick={() => {
-          return handleArticles(article), setHideButton(!hideButton);
-        }}
-        disabled={hideButton}
-      >
-        {hideButton ? "Added" : "+ Read Later"}
       </button>
     </div>
   );

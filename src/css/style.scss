@@ -112,15 +112,6 @@
       background-color: $main-color;
     }
   }
-  button:last-of-type {
-    background-color: white;
-    border: solid 1px $sub-color;
-    color: $sub-color;
-    margin: 0 10px;
-    &:hover {
-      opacity: 0.8;
-    }
-  }
 }
 
 /* GoTop Component */
