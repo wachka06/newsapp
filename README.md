@@ -1,8 +1,11 @@
 # NewS'more
 
-Laptop  
-![Image of Mainpage](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp1.jpg)  
-Mobile  
+#### Laptop(1280x950)
+
+![Image of Mainpage](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp1.jpg)
+
+#### Mobile(768x1024)
+
 ![Image of Mainpage-mobile](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp2.jpg)
 
 ## Description
