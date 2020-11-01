@@ -1,6 +1,8 @@
 # NewS'more
 
-![Image of Mainpage](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp1.jpg)
+Laptop  
+![Image of Mainpage](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp1.jpg)  
+Mobile  
 ![Image of Mainpage-mobile](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp2.jpg)
 
 ## Description
