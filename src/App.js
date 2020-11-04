@@ -7,7 +7,7 @@ import GoTop from "./components/GoTop";
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 const App = () => {
-  const [data, setData] = useState({ articles: [] });
+  const [data, setData] = useState([]);
   const [filter, setFilter] = useState({
     userInput: "",
     userLang: "",
@@ -30,7 +30,7 @@ const App = () => {
 
     await fetch(url)
       .then((res) => res.json())
-      .then((data) => setData({ articles: data.articles }))
+      .then((data) => setData(data.articles))
       .catch((error) => console.log("Request failed", error));
   }
 
@@ -49,7 +49,7 @@ const App = () => {
         <SearchBar handleChange={handleChange} handleSubmit={handleSubmit} />
       </header>
       <main>
-        <ArticleContainer articles={data.articles} />
+        <ArticleContainer articles={data} />
         <GoTop />
       </main>
     </div>
