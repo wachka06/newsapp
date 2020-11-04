@@ -19,7 +19,7 @@ const App = () => {
     setFilter({ [name]: value });
   };
 
-  const endPoint = "http://newsapi.org/v2/everything";
+  const endPoint = "https://newsapi.org/v2/everything";
 
   async function fetchData() {
     const userInputVal = `?q="${filter.userInput}"`;
