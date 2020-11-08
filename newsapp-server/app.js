@@ -5,6 +5,7 @@ require("dotenv").config();
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const API_KEY = process.env.NEWSAPI_API_KEY;
+const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
@@ -31,6 +32,6 @@ app.post("/articles", async (req, res) => {
     .catch((error) => console.log("Request failed", error));
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("Server Listening on port 3000");
 });
