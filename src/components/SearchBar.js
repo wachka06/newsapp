@@ -40,7 +40,7 @@ const SearchBar = ({
         <option value="popularity">{text.popularity}</option>
         <option value="">{text.none}</option>
       </select>
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Search" />
     </form>
   );
 };

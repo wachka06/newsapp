@@ -4,8 +4,6 @@ import SearchBar from "./components/SearchBar";
 import ArticleContainer from "./components/ArticleContainer";
 import GoTop from "./components/GoTop";
 
-const API_KEY = process.env.REACT_APP_API_KEY;
-
 const App = () => {
   const [data, setData] = useState([]);
   const [filter, setFilter] = useState({
@@ -16,19 +14,18 @@ const App = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFilter({ [name]: value });
+    setFilter({ ...filter, [name]: value });
   };
 
-  const endPoint = "https://newsapi.org/v2/everything";
-
   async function fetchData() {
-    const userInputVal = `?q="${filter.userInput}"`;
-    const sortByVal = filter.sortBy ? `&sortBy=${filter.sortBy}` : `&sortBy=""`;
-    const language = filter.userLang ? `&language=${filter.userLang}` : "";
-    const apiKey = `&apiKey=${API_KEY}`;
-    const url = endPoint + userInputVal + sortByVal + language + apiKey;
-
-    await fetch(url)
+    await fetch("http://localhost:3000/articles", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(filter),
+    })
       .then((res) => res.json())
       .then((data) => setData(data.articles))
       .catch((error) => console.log("Request failed", error));
