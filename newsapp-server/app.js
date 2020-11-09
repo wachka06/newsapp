@@ -13,6 +13,9 @@ app.use(
     credentials: true,
   })
 );
+app.use(function (req, res) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+});
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
