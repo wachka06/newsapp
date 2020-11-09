@@ -23,6 +23,8 @@ const App = () => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "https://newsmore.herokuapp.com",
+        "Access-Control-Allow-Credentials": "true",
       },
       body: JSON.stringify(filter),
     })
