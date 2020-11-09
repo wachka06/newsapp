@@ -6,7 +6,7 @@
 
 #### Mobile(768x1024)
 
-![Image of Mainpage-mobile](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp2.jpg)
+<img src="https://github.com/wachka06/newsapp/blob/main/src/img/newsapp2.jpg" width=50% height=50%>
 
 ## Description
 
