@@ -21,7 +21,7 @@ const App = () => {
   };
 
   async function fetchData() {
-    await fetch("http://newsmore.herokuapp.com/articles", {
+    await fetch("https://newsmore.herokuapp.com/articles", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -59,7 +59,7 @@ const App = () => {
 
   const postReadLater = () => {
     if (selectedArticle.title) {
-      fetch("http://newsmore.herokuapp.com/readlaters", {
+      fetch("https://newsmore.herokuapp.com/readlaters", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -75,7 +75,7 @@ const App = () => {
 
   const removeArticle = async (selectedArticle) => {
     const res = await fetch(
-      `http://newsmore.herokuapp.com/${selectedArticle._id}`,
+      `https://newsmore.herokuapp.com/${selectedArticle._id}`,
       {
         method: "DELETE",
       }
