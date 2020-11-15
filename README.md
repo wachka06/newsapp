@@ -2,11 +2,11 @@
 
 #### Laptop(1280x950)
 
-![Image of Mainpage](https://github.com/wachka06/newsapp/blob/main/newsapp-client/src/img/newsapp1.jpg)
+![Image of Mainpage](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp1.jpg)
 
 #### Mobile(768x1024)
 
-<img src="https://github.com/wachka06/newsapp/blob/main/newsapp-client/src/img/newsapp2.jpg" width=80% height=80% alt="Mobile Mainpage">
+<img src="https://github.com/wachka06/newsapp/blob/main/src/img/newsapp2.jpg" width=80% height=80% alt="Mobile Mainpage">
 
 ## Description
 
