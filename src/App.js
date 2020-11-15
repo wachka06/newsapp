@@ -21,7 +21,7 @@ const App = () => {
   };
 
   async function fetchData() {
-    await fetch("http://localhost:3000/articles", {
+    await fetch("http://newsmore.herokuapp.com/articles", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -46,7 +46,7 @@ const App = () => {
   };
 
   useEffect(async () => {
-    const res = await fetch("http://localhost:3000/readlaters");
+    const res = await fetch("http://newsmore.herokuapp.com/readlaters");
     const readLaters = await res.json();
     setReadLaters(readLaters);
   }, []);
@@ -59,7 +59,7 @@ const App = () => {
 
   const postReadLater = () => {
     if (selectedArticle.title) {
-      fetch("http://localhost:3000/readlaters", {
+      fetch("http://newsmore.herokuapp.com/readlaters", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -75,7 +75,7 @@ const App = () => {
 
   const removeArticle = async (selectedArticle) => {
     const res = await fetch(
-      `http://localhost:3000/readlaters/${selectedArticle._id}`,
+      `http://newsmore.herokuapp.com/${selectedArticle._id}`,
       {
         method: "DELETE",
       }
@@ -85,6 +85,8 @@ const App = () => {
     });
     setReadLaters(filteredArticles);
   };
+
+  console.log(data, "data");
 
   return (
     <div className="App">
