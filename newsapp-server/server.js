@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const fetch = require("node-fetch");
+const mongoose = require("mongoose");
 require("dotenv").config();
 const cors = require("cors");
 const bodyParser = require("body-parser");
@@ -42,6 +43,18 @@ app.post("/articles", async (req, res) => {
     .catch((error) => console.log("Request failed", error));
 });
 
+const readLaterRoute = require("./routes/ReadLaters");
+
+app.use("/readlaters", readLaterRoute);
+
+mongoose.connect(
+  process.env.DB_CONNECTION,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  () => {
+    console.log("connected DB!");
+  }
+);
+
 app.listen(PORT, () => {
-  console.log("Server Listening on port 3000");
+  console.log(`Server Listening on port ${PORT}`);
 });

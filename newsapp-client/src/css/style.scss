@@ -37,32 +37,34 @@
   }
 }
 
-/* ReadLaterContainer Component */
+// .ReadLaterContainer {
+//   border: solid 1px $main-color;
+//   display: flex;
+//   margin: 10px 30px;
+//   .ReadLater {
+//     width: 15%;
+//     padding: 0px 8px 6px;
+//     button {
+//       background-color: transparent;
+//       border: none;
+//       color: $sub-text-color;
+//       padding: 0;
+//     }
+//     article {
+//       font-size: 14px;
+//       &:hover {
+//         opacity: 0.8;
+//       }
+//       a {
+//         text-decoration: none;
+//         color: $sub-text-color;
+//       }
+//     }
+//   }
+// }
 
-.ReadLaterContainer {
-  border: solid 1px $main-color;
+main {
   display: flex;
-  margin: 10px 30px;
-  .ReadLater {
-    width: 15%;
-    padding: 0px 8px 6px;
-    button {
-      background-color: transparent;
-      border: none;
-      color: $sub-text-color;
-      padding: 0;
-    }
-    article {
-      font-size: 14px;
-      &:hover {
-        opacity: 0.8;
-      }
-      a {
-        text-decoration: none;
-        color: $sub-text-color;
-      }
-    }
-  }
 }
 
 /* ArticleContainer Component */
@@ -71,45 +73,93 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
+  width: 75%;
+  .Article {
+    max-width: 350px;
+    padding: 20px 10px;
+    .ImgWrapper {
+      position: relative;
+      max-width: 350px;
+      height: 280px;
+      display: flex;
+      margin: 0 auto;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        margin: auto;
+      }
+    }
+    h3 {
+      margin: 10px 0 0 0;
+    }
+    p {
+      font-size: unquote("clamp(10px, 16px + 3vw, 16px)");
+    }
+    p:last-of-type {
+      color: $sub-text-color;
+    }
+    button {
+      @extend %base-button;
+      background-color: $sub-color;
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 0 20px;
+      }
+      &:hover {
+        background-color: $main-color;
+      }
+    }
+    button:last-of-type {
+      background-color: white;
+      border: solid 1px $sub-color;
+      color: $sub-color;
+      margin: 0 10px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
-.Article {
-  max-width: 350px;
-  padding: 20px 10px;
-  .ImgWrapper {
-    position: relative;
-    max-width: 350px;
-    height: 280px;
-    display: flex;
-    margin: 0 auto;
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      margin: auto;
-    }
+/* ReadLaters Component */
+
+.ReadLaters {
+  position: fixed;
+  top: 75px;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px 10px 20px 10px;
+  width: 22%;
+  h6 {
+    letter-spacing: 7px;
+    margin: 0;
+    padding: 14px 0 0;
   }
-  h3 {
-    margin: 10px 0 0 0;
-  }
-  p {
+  .ReadLater {
     font-size: unquote("clamp(10px, 16px + 3vw, 16px)");
-  }
-  p:last-of-type {
-    color: $sub-text-color;
-  }
-  button {
-    @extend %base-button;
-    background-color: $sub-color;
-    a {
-      text-decoration: none;
-      color: white;
-      padding: 0 20px;
-    }
+    padding: 8px 20px 10px 0;
     &:hover {
-      background-color: $main-color;
+      button,
+      a {
+        opacity: 0.6;
+        transition: 0.8s;
+      }
+    }
+    button {
+      display: block;
+      border: none;
+      background: none;
+      margin: 0 0 0 auto;
+      opacity: 0;
+    }
+    a {
+      color: $sub-text-color;
+      text-decoration: none;
     }
   }
 }
