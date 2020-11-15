@@ -74,7 +74,6 @@ const App = () => {
   };
 
   const removeArticle = async (selectedArticle) => {
-    console.log(selectedArticle._id, "ID");
     const res = await fetch(
       `http://localhost:3000/readlaters/${selectedArticle._id}`,
       {
