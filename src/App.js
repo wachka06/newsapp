@@ -14,7 +14,7 @@ const App = () => {
   });
   const [readLaters, setReadLaters] = useState([]);
   const [selectedArticle, setSelectedArticle] = useState({});
-  const url = "https://newsmore.herokuapp.com";
+  const url = "http://localhost:3000";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,8 +27,7 @@ const App = () => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin":
-          "https://newsmore.herokuapp.com/articles",
+        "Access-Control-Allow-Origin": "https://newsmore.herokuapp.com",
         "Access-Control-Allow-Credentials": "true",
       },
       body: JSON.stringify(filter),

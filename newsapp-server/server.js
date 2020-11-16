@@ -10,11 +10,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: [
-      "https://newsmore.herokuapp.com",
-      "https://newsmore.herokuapp.com/articles",
-      "http://localhost:3001",
-    ],
+    origin: ["https://newsmore.herokuapp.com", "http://localhost:3001"],
     credentials: true,
   })
 );
