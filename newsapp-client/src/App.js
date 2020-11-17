@@ -23,24 +23,31 @@ const App = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch(`${url}/articles`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(filter),
-    })
-      .then((res) => res.json())
-      .then((data) => setData(data.articles))
-      .catch((error) => console.log("Request failed", error));
+    try {
+      const res = await fetch(`${url}/articles`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(filter),
+      });
+      const data = await res.json();
+      setData(data.articles);
+    } catch (err) {
+      console.log((err) => console.log("Request failed", err));
+    }
   };
 
   useEffect(() => {
     async function fetchReadLaters() {
-      const res = await fetch(`${url}/readlaters`);
-      const readLaters = await res.json();
-      setReadLaters(readLaters);
+      try {
+        const res = await fetch(`${url}/readlaters`);
+        const readLaters = await res.json();
+        setReadLaters(readLaters);
+      } catch (err) {
+        console.log((err) => console.log("Request failed", err));
+      }
     }
     fetchReadLaters();
   }, []);
@@ -51,30 +58,38 @@ const App = () => {
     return postReadLater();
   };
 
-  const postReadLater = () => {
+  const postReadLater = async () => {
     if (selectedArticle.title) {
-      fetch(`${url}/readlaters`, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(selectedArticle),
-      })
-        .then((res) => res.json())
-        .then((addedData) => setReadLaters([...readLaters, addedData]))
-        .catch((error) => console.log("Request failed", error));
+      try {
+        const res = await fetch(`${url}/readlaters`, {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(selectedArticle),
+        });
+        const data = await res.json();
+        setReadLaters([...readLaters, data]);
+      } catch (err) {
+        console.log("Request failed", err);
+      }
     }
   };
 
   const removeArticle = async (selectedArticle) => {
-    await fetch(`${url}/readlaters/${selectedArticle._id}`, {
-      method: "DELETE",
-    });
-    const filteredArticles = readLaters.filter((article) => {
-      return article._id !== selectedArticle._id;
-    });
-    setReadLaters(filteredArticles);
+    try {
+      const res = await fetch(`${url}/readlaters/${selectedArticle._id}`, {
+        method: "DELETE",
+      });
+      res.status === 200 && console.log("The data is succesfully deleted.");
+      const filteredArticles = readLaters.filter((article) => {
+        return article._id !== selectedArticle._id;
+      });
+      setReadLaters(filteredArticles);
+    } catch (err) {
+      console.log("Request failed", err);
+    }
   };
 
   return (
