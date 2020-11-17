@@ -14,7 +14,7 @@ const App = () => {
   });
   const [readLaters, setReadLaters] = useState([]);
   const [selectedArticle, setSelectedArticle] = useState({});
-  const url = "http://newsmore.herokuapp.com";
+  const url = "http://localhost:3000";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
