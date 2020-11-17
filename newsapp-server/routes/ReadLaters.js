@@ -33,23 +33,6 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.patch("/:id", async (req, res) => {
-  try {
-    const updatedReadLater = await ReadLater.updateOne(
-      { _id: req.params.id },
-      {
-        $set: {
-          title: req.body.title,
-          url: req.body.url,
-        },
-      }
-    );
-    res.json(updatedReadLater);
-  } catch (err) {
-    res.json({ message: err });
-  }
-});
-
 router.delete("/:id", async (req, res) => {
   try {
     const removedReadLater = await ReadLater.deleteOne({ _id: req.params.id });

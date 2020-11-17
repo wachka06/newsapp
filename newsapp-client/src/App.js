@@ -14,7 +14,7 @@ const App = () => {
   });
   const [readLaters, setReadLaters] = useState([]);
   const [selectedArticle, setSelectedArticle] = useState({});
-  const url = "http://localhost:3000";
+  const url = "http://newsmore.herokuapp.com";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,8 +27,6 @@ const App = () => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "https://newsmore.herokuapp.com",
-        "Access-Control-Allow-Credentials": "true",
       },
       body: JSON.stringify(filter),
     })
@@ -75,7 +73,7 @@ const App = () => {
   };
 
   const removeArticle = async (selectedArticle) => {
-    const res = await fetch(`${url}/${selectedArticle._id}`, {
+    const res = await fetch(`${url}/readlaters/${selectedArticle._id}`, {
       method: "DELETE",
     });
     const filteredArticles = readLaters.filter((article) => {
