@@ -30,3 +30,23 @@ Project is created with:
 - React version: 16.13.1
 - Node.js version: v11.13.0
 - npm version: 6.13.7
+
+## Project setup
+
+To run this project, install it locally and using npm:
+
+Server:
+
+```
+$ cd newsapp-server
+$ npm install
+$ npm start
+```
+
+Client:
+
+```
+$ cd newsapp-client
+$ npm install
+$ npm start
+```
