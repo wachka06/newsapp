@@ -28,7 +28,8 @@ const Article = ({ article, addArticle }) => {
       </button>
       <button
         onClick={() => {
-          return addArticle(article), setHideButton(!hideButton);
+          addArticle(article);
+          setHideButton(!hideButton);
         }}
         disabled={hideButton}
       >

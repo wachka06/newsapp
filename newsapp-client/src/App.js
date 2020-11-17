@@ -21,7 +21,8 @@ const App = () => {
     setFilter({ ...filter, [name]: value });
   };
 
-  async function fetchData() {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     await fetch(`${url}/articles`, {
       method: "POST",
       headers: {
@@ -33,21 +34,15 @@ const App = () => {
       .then((res) => res.json())
       .then((data) => setData(data.articles))
       .catch((error) => console.log("Request failed", error));
-  }
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    fetchData();
   };
 
-  useEffect(async () => {
-    const res = await fetch(`${url}/readlaters`);
-    const readLaters = await res.json();
-    setReadLaters(readLaters);
+  useEffect(() => {
+    async function fetchReadLaters() {
+      const res = await fetch(`${url}/readlaters`);
+      const readLaters = await res.json();
+      setReadLaters(readLaters);
+    }
+    fetchReadLaters();
   }, []);
 
   const addArticle = (article) => {
@@ -73,7 +68,7 @@ const App = () => {
   };
 
   const removeArticle = async (selectedArticle) => {
-    const res = await fetch(`${url}/readlaters/${selectedArticle._id}`, {
+    await fetch(`${url}/readlaters/${selectedArticle._id}`, {
       method: "DELETE",
     });
     const filteredArticles = readLaters.filter((article) => {
