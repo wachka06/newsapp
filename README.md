@@ -11,6 +11,7 @@
 ## Description
 
 This app allows a user to search [NewsAPI](https://newsapi.org/) for articles about a topic, which the user types in a searchbar. The user may then choose a sort option, sorting the news results by date, relevance or popularity. The results are displayed on the app in an appropriate format for the user's device.
+The user can save the articles they want to read later.
 
 ### What I improved...
 
@@ -30,6 +31,7 @@ Project is created with:
 - React version: 16.13.1
 - Node.js version: v11.13.0
 - npm version: 6.13.7
+- MongoDB version: v4.2.3
 
 ## Project setup
 
