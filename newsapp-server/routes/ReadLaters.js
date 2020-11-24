@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
     const readLaters = await ReadLater.find();
     res.json(readLaters);
   } catch (err) {
-    res.json({ message: err });
+    res.status(500).json({ message: err });
   }
 });
 
@@ -16,27 +16,23 @@ router.post("/", async (req, res) => {
   const readLater = new ReadLater({ title, url });
   try {
     const savedReadLater = await readLater.save();
-    res.json(savedReadLater);
+    res.status(201).json(savedReadLater);
   } catch (err) {
-    res.json({ message: err });
-  }
-});
-
-router.get("/:id", async (req, res) => {
-  try {
-    const readLater = await ReadLater.findById(req.params.id);
-    res.json(readLater);
-  } catch (err) {
-    res.json({ message: err });
+    res.status(400).json({ message: err });
   }
 });
 
 router.delete("/:id", async (req, res) => {
   try {
-    const removedReadLater = await ReadLater.deleteOne({ _id: req.params.id });
+    const removedReadLater = await ReadLater.findOneAndDelete({
+      _id: req.params.id,
+    });
+    if (!removedReadLater) {
+      res.status(404).send();
+    }
     res.json(removedReadLater);
   } catch (err) {
-    res.json({ message: err });
+    res.status(500).json({ message: err });
   }
 });
 
