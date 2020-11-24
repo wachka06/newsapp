@@ -13,7 +13,7 @@ const App = () => {
     sortBy: "",
   });
   const [readLaters, setReadLaters] = useState([]);
-  const fetchURL = "http://localhost:3000";
+  const fetchURL = "https://newsmore.herokuapp.com";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
