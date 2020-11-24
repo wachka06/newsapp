@@ -34,7 +34,7 @@ const App = () => {
       const data = await res.json();
       setData(data.articles);
     } catch (err) {
-      console.log((err) => console.log("Request failed", err));
+      console.log("Request failed", err);
     }
   };
 
@@ -45,7 +45,7 @@ const App = () => {
         const readLaters = await res.json();
         setReadLaters(readLaters);
       } catch (err) {
-        console.log((err) => console.log("Request failed", err));
+        console.log("Request failed", err);
       }
     }
     fetchReadLaters();
