@@ -12,10 +12,8 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const readLater = new ReadLater({
-    title: req.body.title,
-    url: req.body.url,
-  });
+  const { title, url } = req.body;
+  const readLater = new ReadLater({ title, url });
   try {
     const savedReadLater = await readLater.save();
     res.json(savedReadLater);

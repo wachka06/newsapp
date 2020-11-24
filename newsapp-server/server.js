@@ -14,19 +14,18 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.post("/articles", async (req, res) => {
+  const { userInput, sortBy, userLang } = req.body;
   const endPoint = "https://newsapi.org/v2/everything";
-  const userInputVal = `?q="${req.body.userInput}"`;
-  const sortByVal = req.body.sortBy
-    ? `&sortBy=${req.body.sortBy}`
-    : `&sortBy=""`;
-  const language = req.body.userLang ? `&language=${req.body.userLang}` : "";
+  const userInputVal = `?q="${userInput}"`;
+  const sortByVal = sortBy ? `&sortBy=${sortBy}` : `&sortBy=""`;
+  const language = userLang ? `&language=${userLang}` : "";
   const apiKey = `&apiKey=${API_KEY}`;
   const url = endPoint + userInputVal + sortByVal + language + apiKey;
 
   return await fetch(url)
     .then((res) => res.json())
-    .then((data) => res.send(data))
-    .catch((error) => console.log("Request failed", error));
+    .then((data) => res.status(200).send(data))
+    .catch((error) => res.status(400).send(error));
 });
 
 const readLaterRoute = require("./routes/ReadLaters");
