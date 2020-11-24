@@ -2,11 +2,11 @@
 
 #### Laptop(1280x950)
 
-![Image of Mainpage](https://github.com/wachka06/newsapp/blob/main/newsapp-client/src/img/newsapp1.jpg)
+![Image of Mainpage](https://github.com/wachka06/newsapp/blob/main/src/img/newsapp1.jpg)
 
 #### Mobile(768x1024)
 
-<img src="https://github.com/wachka06/newsapp/blob/main/newsapp-client/src/img/newsapp2.jpg" width=80% height=80% alt="Mobile Mainpage">
+<img src="https://github.com/wachka06/newsapp/blob/main/src/img/newsapp2.jpg" width=80% height=80% alt="Mobile Mainpage">
 
 ## Description
 
@@ -18,11 +18,6 @@ The user can save the articles they want to read later.
 - Added a scroll back to top button in order to go back to the top smoothly on mobile.
 - Placed the Search Bar at the bottom of the page on mobile, since it's closer to the user's fingers.
 - Implemented app without using class components for the readability and the fast rendering.
-
-### How I might improve the app if I were to complete it
-
-- Add Jest test
-- Add No Results Found page when the user cannot get any results
 
 ## Technologies
 
